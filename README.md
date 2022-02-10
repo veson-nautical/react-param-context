@@ -1,5 +1,5 @@
 # React Parameter Context
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![Build](https://github.com/mshafir/react-param-context/actions/workflows/build.yml/badge.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) ![Build](https://github.com/veson-nautical/react-param-context/actions/workflows/build.yml/badge.svg)
 
 This library implements a pattern to declare global state for an application and configure how to initialize that state (ex via query params, localstorage, in-memory, api call) and migrate it as the application changes. It solves a common use case of handling global state without requiring a full
 implementation of a flux/redux architecture. Most of your state can stay at the component level. It can serve as an in-between for component-only state and flux libraries.
