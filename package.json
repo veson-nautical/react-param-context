@@ -1,0 +1,50 @@
+{
+    "name": "react-param-context",
+    "version": "1.0.0",
+    "description": "Hooks for loading global application from configurable parameters",
+    "source": "src/index.ts",
+    "main": "./build/lib/index.js",
+    "exports": "./build/lib/index.modern.js",
+    "module": "./build/lib/index.es.js",
+    "typings": "build/types/index.d.ts",
+    "license": "See License in LICENSE",
+    "homepage": "https://github.com/veson-nautical/react-param-context",
+    "author": "Michael Shafir <mshafir@veson.com>",
+    "repository": "github:veson-nautical/react-param-context",
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "scripts": {
+        "build": "microbundle --jsx React.createElement",
+        "test": "jest",
+        "doc": "typedoc --options typedoc.json"
+    },
+    "dependencies": {
+        "lodash.isequal": "~4.5.0",
+        "query-string": "~7.0.0"
+    },
+    "peerDependencies": {
+        "react": "~16.14.0",
+        "react-dom": "~16.14.0",
+        "react-router": "^5.1.2",
+        "react-router-dom": "^5.1.2"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "~5.11.4",
+        "@testing-library/react": "~11.1.0",
+        "@types/history": "~4.7.8",
+        "@types/testing-library__jest-dom": "~5.9.5",
+        "@types/react": "^16.9.48",
+        "@types/react-dom": "16.8.4",
+        "@types/lodash.isequal": "~4.5.5",
+        "@types/jest": "^27.0.3",
+        "@types/react-router-dom": "^5.1.0",
+        "history": "~4.10.1",
+        "jest": "^27.4.5",
+        "microbundle": "^0.14.2",
+        "ts-jest": "^27.1.2",
+        "tslib": "^2.3.1",
+        "typedoc": "^0.22.10",
+        "typescript": "^4.5.4"
+    }
+}
