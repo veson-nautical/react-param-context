@@ -104,14 +104,12 @@ export function ParameterContextProvider<T=any>({
     const appliedMigrations = useRef(false);
     const [loaded, setLoaded] = useState(false);
 
-    // when we trigger additional migrations reset the appliedMigrations flag
     useEffect(() => {
         appliedMigrations.current = false;
     }, [additionalMigrationTrigger]);
 
     useEffect(() => {
         if (!appliedMigrations.current && migrations && migrations.length > 0) {
-            setLoaded(true);
             runMigrations(providers, migrations);
         }
         appliedMigrations.current = true;
