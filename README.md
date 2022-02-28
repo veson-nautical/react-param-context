@@ -20,7 +20,7 @@ function useGlobalParams() {
     // sidebar open/closed will be stored in memory
     isSidebarOpen:  useState(false),
     // the favorite items will be stored in browser local storage
-    favoriteIds:    useLocalStorage('favoriteIds', [] as string[])
+    favoriteIds:    useLocalStorageState('favoriteIds', [] as string[])
   }
 }
 ```
@@ -73,7 +73,7 @@ Let's say from the example above that we made a mistake and the favorite id colu
 
 if we changed our useGlobalParams hook to have
 ```ts
-favoriteIds:    useLocalStorage('favoriteIds', [] as number[])
+favoriteIds:    useLocalStorageState('favoriteIds', [] as number[])
 ```
 and started using this global parameter as a number[] instead, we'd have a problem that
 any users which opened the application before will already have strings in their browser
@@ -105,7 +105,7 @@ next time.
 
 ## State Helpers
 
-This library provides implementations of `useLocalStorage` and `useQueryParmeter`, because we found
+This library provides implementations of `useLocalStorageState` and `useQueryParmeter`, because we found
 existing libraries of mixed quality, but you are welcome to use your own hooks or other libraries as well. You can implement hooks that set data through APIs or custom reducers, but every parameter
 should return a [state, setState] pair in the end.
 
