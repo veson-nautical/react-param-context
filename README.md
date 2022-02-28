@@ -2,7 +2,9 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/veson-nautical/react-param-context/blob/main/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![Build](https://github.com/veson-nautical/react-param-context/actions/workflows/build.yml/badge.svg)](https://github.com/veson-nautical/react-param-context/actions/workflows/build.yml)
 
 This library implements a pattern to declare global state for an application and configure how to initialize that state (ex via query params, localstorage, in-memory, api call) and migrate it as the application changes. It solves a common use case of handling global state without requiring a full
-implementation of a flux/redux architecture. Most of your state can stay at the component level. It can serve as an in-between for component-only state and flux libraries.g
+implementation of a flux/redux architecture. Most of your state can stay at the component level. It can serve as an in-between for component-only state and flux libraries.
+
+[Demo App](https://codesandbox.io/s/react-param-context-example-8vjce6)
 
 ## Installation
 
