@@ -1,6 +1,6 @@
 {
     "name": "react-param-context",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Hooks for loading global application from configurable parameters",
     "source": "src/index.ts",
     "main": "./build/lib/index.js",
